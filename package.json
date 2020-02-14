@@ -1,0 +1,27 @@
+{
+  "name": "Gotta-Get-That-Gram",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JamesTedesco/Gotta-Get-That-Gram.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JamesTedesco/Gotta-Get-That-Gram/issues"
+  },
+  "homepage": "https://github.com/JamesTedesco/Gotta-Get-That-Gram#readme",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "dotenv": "^8.2.0",
+    "nodemailer": "^6.4.2",
+    "twilio": "^3.39.4"
+  }
+}
