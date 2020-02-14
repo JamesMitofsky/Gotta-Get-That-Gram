@@ -14,17 +14,18 @@ const authToken = process.env.TOKEN
 const client = require('twilio')(accountSid, authToken);
 
 // testing with my cellphone
-const userPhoneNumber = "8027774849"
+// const userPhoneNumber = "8027774849"
 
 // Kyle's cellphone
-// const userPhoneNumber = "8027936498"
+const userPhoneNumber = "8027936498"
 
 
 main()
 
 function main() {
 
-    notifyUserEnrolled()
+    // one time use for initial notification of tracking
+    // notifyUserEnrolled()
 
     // check Best Buy
     let bestBuyURL = "https://www.bestbuy.com/site/lg-gram-2-in-1-14-touch-screen-laptop-intel-core-i7-16gb-memory-1tb-ssd-dark-silver/6398013.p?skuId=6398013"
@@ -96,7 +97,7 @@ function notifyUserEnrolled() {
     // send text
     client.messages
         .create({
-            body: `Howdy doody, we're now checking Amazon and Best Buy every five minutes for availability of the LG Gram.\n\nHere's a link to the Github repo: https://bit.ly/31SwJNa`,
+            body: `Howdy doody, we're now checking Amazon and Best Buy every five minutes for availability of the LG Gram.\n\nHere's a link to the repo for this code: https://bit.ly/31SwJNa`,
             from: '+18022103669',
             to: `+1${userPhoneNumber}`
         })
